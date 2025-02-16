@@ -20,7 +20,10 @@ myLoop:
 		case "1":
 			menu.Print()
 		case "2":
-			menu.AddItem()
+			err := menu.AddItem()
+			if err != nil {
+				fmt.Println(fmt.Errorf("error adding item: %v", err))
+			}
 		case "q":
 			break myLoop
 		default:
