@@ -8,10 +8,10 @@ func TestAdd(t *testing.T) {
 	expected := 3
 
 	// when
-	got := Add(l, r)
+	result := Add(l, r)
 
 	// then
-	if got != expected {
-		t.Errorf("Add(%d, %d) = %d; want %d", l, r, got, expected)
+	if result != expected {
+		t.Errorf("Add(%d, %d) = %d; want %d", l, r, result, expected)
 	}
 }
